@@ -11,6 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  max-width: 1550px;
+}
+
 .hero-img-container-layer {
   background: radial-gradient(
     circle at 50% 50%,

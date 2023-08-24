@@ -2,9 +2,9 @@ import React from "react"
 
 const Rankings = () => {
   return (
-    <div>
+    <div className='flex flex-col gap-[50px]'>
       <div>
-        <h1>Rankings</h1>
+        <h1 className='text-4xl'>Rankings</h1>
         <div>
           <span>Teams</span>
           <button>

@@ -5,11 +5,13 @@ import Seasons from "./components/Seasons"
 
 function App() {
   return (
-    <>
+    <div className='flex flex-col gap-[90px] bg-[#EFEFEF]'>
       <Header />
-      <Seasons />
-      <Rankings />
-    </>
+      <div className='container flex flex-col gap-[90px]  px-[154px]'>
+        <Seasons />
+        <Rankings />
+      </div>
+    </div>
   )
 }
 
