@@ -10,3 +10,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.hero-img-container-layer {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(45, 45, 45, 0) 0%,
+    rgba(45, 45, 45, 1) 80%
+  );
+}
