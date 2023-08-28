@@ -14,6 +14,7 @@ body {
 
 .container {
   max-width: 1550px;
+  margin: 0 auto;
 }
 
 .hero-img-container-layer {

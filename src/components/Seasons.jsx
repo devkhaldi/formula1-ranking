@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import axios from "axios"
 
 const seasonsData = [
   { id: 1, value: "2012" },
@@ -16,6 +17,23 @@ const seasonsData = [
 
 const Seasons = () => {
   const [active, setSctive] = useState("2017")
+
+  const headers = {
+    "x-rapidapi-host": "api-formula-1.p.rapidapi.com",
+    "x-rapidapi-key": "6e66448a03msha38719e4a719cb2p139b18jsn0a457c378d87",
+  }
+
+  const url = "https://api-formula-1.p.rapidapi.com"
+
+  useEffect(() => {
+    axios
+      .get(url, {
+        headers,
+      })
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+  }, [])
+
   return (
     <section className='flex flex-col gap-[50px]'>
       <div>
